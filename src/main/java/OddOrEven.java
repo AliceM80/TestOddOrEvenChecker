@@ -3,19 +3,12 @@ package main.java;
 
 public class OddOrEven {
 
-    public static boolean isOddNumber(int x) {
-        if (x % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+    public boolean isOddNumber(int x) {
+        return x %2 != 0;
     }
 
-    public static boolean isEvenNumber(int x) {
-        if (x % 2 != 0) {
-            return true;
-        } else {
-            return false;
+    public  boolean isEvenNumber(int x) {
+        return x %2 == 0;
         }
     }
 }

@@ -1,12 +1,17 @@
+package test.java;
+
 import main.java.OddOrEven;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import org.junit.jupiter.params.provider.ValueSource;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
-public class TestOddOrEvenChecker {
+public class TestOddOrEven {
 
     private static OddOrEven oddOrEven;
 
@@ -22,6 +27,6 @@ public class TestOddOrEvenChecker {
 
     @Test
     public void testEvenNumber() {
-        assertTrue(oddOrEven.isEvenNumber(5));
+        assertTrue(oddOrEven.isOddNumber(5));
     }
 }
