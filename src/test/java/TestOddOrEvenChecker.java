@@ -16,7 +16,12 @@ public class TestOddOrEvenChecker {
     }
 
     @Test
-    public static void testOddNumber() {
+    public void testOddNumber() {
         assertTrue(oddOrEven.isOddNumber(4));
+    }
+
+    @Test
+    public void testEvenNumber() {
+        assertTrue(oddOrEven.isEvenNumber(5));
     }
 }
